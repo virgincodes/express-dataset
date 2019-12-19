@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prestart": "npm install",
     "start": "node ./bin/www",
     "pretest": "npm install",
     "test": "./node_modules/.bin/mocha test"
   },
   "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "bluebird": "^3.5.0",
     "body-parser": "~1.17.1",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
@@ -23,8 +24,8 @@
     "mocha-junit-reporter": "^1.13.0",
     "mocha-multi-reporters": "^1.1.4",
     "morgan": "~1.8.1",
+    "node-pre-gyp": "^0.14.0",
     "serve-favicon": "~2.4.2",
-    "sqlite3": "^3.1.9",
-    "bluebird": "^3.5.0"
+    "sqlite3": "^4.1.1"
   }
 }
